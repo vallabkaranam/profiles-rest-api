@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'rest_framework.authtoken',
-    'profiles_api',
+    'rest_framework', # django rest framework from requirements.txt
+    'rest_framework.authtoken', #django rest framework from requirements.txt
+    'profiles_api', # when we created a new app in this project manually
 ]
 
 MIDDLEWARE = [
