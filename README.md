@@ -96,3 +96,33 @@ This is a fully functional REST API built with Django and Django REST Framework.
   ```bash
   python manage.py createsuperuser
   ```
+
+---
+
+## 🔄 Updating the Deployed App on AWS
+
+To push new changes to the live server:
+
+1. **Push changes to GitHub**
+   ```bash
+   git add .
+   git commit -m "Your message"
+   git push origin main
+   ```
+
+2. **SSH into your EC2 instance**
+   ```bash
+   ssh ubuntu@your-ec2-public-dns
+   ```
+
+3. **Navigate to the app directory**
+   ```bash
+   cd /usr/local/apps/profiles-rest-api/
+   ```
+
+4. **Run the update script**
+   ```bash
+   sudo sh ./deploy/update.sh
+   ```
+
+This script will pull the latest code from GitHub and restart the necessary services.
