@@ -66,18 +66,23 @@ This is a fully functional REST API built with Django and Django REST Framework.
    ```bash
    vagrant ssh
    ```
+4.	**Navigate to the project directory and activate the virtual environment**
+      ```bash
+      cd /vagrant
+      source ~/env/bin/activate
+      ```
 
-4. **Install Python dependencies**
+5. **Install Python dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-5. **Run the development server**
+6. **Run the development server**
    ```bash
    python manage.py runserver 0.0.0.0:8000
    ```
 
-6. **Access the API in your browser**  
+7. **Access the API in your browser**  
    Visit: [http://localhost:8000](http://localhost:8000)
 
 ---
